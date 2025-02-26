@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport d’Intervention SSIAP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        .label {
+            font-weight: bold;
+            color: #444;
+        }
+        .content {
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .index-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .overlay a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .close-btn {
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rapport d’Intervention SSIAP</h1>
+        
+        <div class="section">
+            <span class="label">📅 Date :</span>
+            <div class="content">26/02/2025</div>
+        </div>
+        
+        <div class="section">
+            <span class="label">🕒 Heure de l’incident :</span>
+            <div class="content">14h30</div>
+        </div>
+        
+        <div class="section">
+            <span class="label">📍 Lieu :</span>
+            <div class="content">Rez-de-chaussée, local technique, armoire électrique</div>
+        </div>
+        
+        <div class="section">
+            <span class="label">👤 Rédacteur :</span>
+            <div class="content">[Nom de l’agent SSIAP]</div>
+        </div>
+        
+        <div class="section">
+            <span class="label">📝 Description de l’incident :</span>
+            <div class="content">
+                Lors d’une ronde, j’ai découvert une personne inconsciente au sol, en contact avec un câble électrique à proximité de l’armoire électrique. J’ai immédiatement alerté le PCS et sécurisé la zone.
+            </div>
+        </div>
+        
+        <div class="section">
+            <span class="label">✅ Actions entreprises :</span>
+            <div class="content">
+                - Activation du bouton d’arrêt d’urgence.<br>
+                - Confirmation de la coupure du courant auprès du PCS.<br>
+                - Sécurisation de la zone pour empêcher l’accès au public.<br>
+                - Vérification de l’état de la victime : inconsciente mais respiration présente.<br>
+                - Mise en PLS en attendant les secours.<br>
+                - Alerte au PCS après mise en PLS.
+            </div>
+        </div>
+        
+        <div class="section">
+            <span class="label">🚑 Arrivée des secours :</span>
+            <div class="content">
+                - Les pompiers sont arrivés à 14h40.<br>
+                - Transmission des informations sur l’état de la victime et les actions entreprises.<br>
+                - Les pompiers ont pris en charge la victime et l’ont évacuée vers l’hôpital.
+            </div>
+        </div>
+        
+        <div class="section">
+            <span class="label">🔚 Conclusion :</span>
+            <div class="content">
+                L’intervention s’est déroulée sans incident supplémentaire. L’armoire électrique a été mise hors service pour contrôle par un technicien. Fin de l’intervention à 15h00.
+            </div>
+        </div>
+        
+        <div class="section">
+            <span class="label">📝 Rédigé par :</span>
+            <div class="content">[Nom de l’agent]</div>
+        </div>
+        
+        <div class="section">
+            <span class="label">✍ Signature :</span>
+            <div class="content">__________</div>
+        </div>
+        
+        <button class="index-btn" onclick="openOverlay()">📂 Index</button>
+    </div>
+    
+    <div class="overlay" id="indexOverlay">
+        <div class="overlay-content">
+            <h2>Index</h2>
+            <div>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-1/">Quiz 1</a>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-2/">Quiz 2</a>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-3/">Quiz 3</a>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-4/">Quiz 4</a>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-5/">Quiz 5</a>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-6/">Quiz 6</a>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-7/">Quiz 7</a>
+                <a href="https://remi-mason.github.io/Quiz-AFPA-8/">Quiz 8</a>
+                <a href="https://remi-mason.github.io/Mega-Quiz/">Mega-Quiz</a>
+                <a href="https://remi-mason.github.io/Quiz-Oral/">Quiz-Oral</a>
+                <a href="https://remi-mason.github.io/Pratique/">Pratique</a>
+                <a href="https://remi-mason.github.io/Rapport/">Rapport</a>
+				<a href="https://remi-mason.github.io/Main-Courante/">Main-Courante</a>
+            </div>
+            <button class="close-btn" onclick="closeOverlay()">Fermer</button>
+        </div>
+    </div>
+    
+    <script>
+        function openOverlay() {
+            document.getElementById("indexOverlay").style.display = "flex";
+        }
+        
+        function closeOverlay() {
+            document.getElementById("indexOverlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
